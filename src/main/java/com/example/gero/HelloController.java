@@ -9,7 +9,7 @@ public class HelloController {
 
     @RequestMapping(value="/")
     public ModelAndView  top(ModelAndView mav){
-    	mav.setViewName("top");
+    	mav.setViewName("login");
         return mav;
     }
     
