@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sign-in/">
 
  <!-- Bootstrap core CSS -->
- <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.1.0/css/bootstrap.min.css}" />
+ <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" />
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -40,12 +40,13 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    
+  <!-- Custom styles for this template -->
+   <link rel="stylesheet" media="all" th:href="@{/css/signin.css}"/>
   </head>
   
-<body class="text-center">
-
+  
+<body class="text-center ">
     <form class="form-signin">
 	  <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
 	  	<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
