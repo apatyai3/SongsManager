@@ -1,13 +1,13 @@
-package com.example.gero;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GeroApplication {
+public class SongsManagerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GeroApplication.class, args);
+		SpringApplication.run(SongsManagerApplication.class, args);
 	}
 
 }
