@@ -1,10 +1,10 @@
-package com.example.gero;
+package com.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GeroApplicationTests {
+class SongsManagerApplicationTests {
 
 	@Test
 	void contextLoads() {
