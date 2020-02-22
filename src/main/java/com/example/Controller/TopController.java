@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class TopController {
 
 	@PostMapping("/top")
-	public String top(Model model){
+	public String top(){
         return "top.html";
     }
 }
