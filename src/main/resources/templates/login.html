@@ -9,21 +9,25 @@
  <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" />
   <!-- Custom styles for this template -->
    <link rel="stylesheet" media="all" th:href="@{/css/login.css}"/>
+   <link th:href="@{/js/login.js}"/>
+   
   </head>
   
   
 <body class="text-center">
-    <form class="form-signin" action="/top" method="post" th:object="${loginForm}">
+    <form class="form-signin" th:action="@{/top}" method="post">
 	  	<h1 class="h3 mb-3 font-weight-normal">Songs Manager</h1>
   	
   		<label for="inputUserName" class="sr-only">User Name</label>
-  	  		<input type="text" id="userName" class="form-control" placeholder="User Name" required >
+  	  		<input type="text" id="userName" name = "userName" class="form-control" placeholder="User Name" required />
   		<label for="inputPassword" class="sr-only">Password</label>
-  			<input type="password" id="password" class="form-control" placeholder="Password" required>
+  			<input type="password" id="password" name = "password" class="form-control" placeholder="Password" required />
 		<label for="signUp" class="sr-only">signUp</label>
-  		<button id = "inputButton" class="btn btn-lg btn-secondary btn-block" type="submit">Sing in</button>
+  		<button id = "inputButton" class="btn btn-lg btn-secondary btn-block" type = "submit">Sing in</button>
   		<a th:href="@{#}" class="text-secondary">Sign Up</a>
-  		
-	</form>
+	</form>	
+	
+	<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <title>Sample</title>
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.2.1/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" />
 </head>
 <body>
 	<div th:text="TOP"></div>
@@ -14,7 +14,11 @@
 	<div class="mb-3">
 		<button class="btn btn-primary" type="submit">爆破スイッチ</button>
 	</div>
-	<script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
-<script th:src="@{/webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
+	<div>
+		<input type = "text" th:text= "${loginForm.userName}" />
+		<input type = "text" th:text= "${loginForm.password}" />
+	</div>
+	<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
 </body>
 </html>
